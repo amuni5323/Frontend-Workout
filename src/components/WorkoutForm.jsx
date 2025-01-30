@@ -23,7 +23,7 @@ const WorkForm = () => {
 
     axios
       .post(
-        'http://localhost:5000/api/workouts',
+        'https://backend-workout-4w4a.onrender.com/api/workouts',
         { title, reps, load, weight },
         { headers: { Authorization: `Bearer ${token}` } }
       )

@@ -31,7 +31,7 @@ const Signup =  () => {
     }
 
     axios
-      .post("http://localhost:5000/api/auth/signup", { username, email, password })
+      .post("https://backend-workout-4w4a.onrender.com/api/auth/signup", { username, email, password })
       .then(() => {
         enqueueSnackbar("Signup successful! Please check your email to verify your account", { variant: "success" });
         navigate("/");

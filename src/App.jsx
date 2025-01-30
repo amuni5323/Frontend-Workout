@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext'; // This is now correct
+import { AuthProvider } from './context/AuthContext'; 
 import Home from './pages/Home';
 import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';

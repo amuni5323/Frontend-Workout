@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../index.css'; // or any path to your custom CSS
+import '../index.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BsArrowLeft } from 'react-icons/bs'
 const BackArrow = ({destination='/'}) => {

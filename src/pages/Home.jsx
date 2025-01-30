@@ -9,14 +9,14 @@ const Home = () => {
   const [currentWeight, setCurrentWeight] = useState('');
   const navigate = useNavigate();
 
-  // Fetch user-specific workouts
+ 
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
       navigate('/login');
     } else {
       axios
-        .get('http://localhost:5000/api/workouts', {
+        .get('https://backend-workout-4w4a.onrender.com/api/workouts', {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((response) => {
@@ -27,9 +27,9 @@ const Home = () => {
           console.error('Error fetching workouts:', error);
         });
 
-      // Fetch user-specific weight
+    
       axios
-        .get('http://localhost:5000/api/auth/user-weight', {
+        .get('https://backend-workout-4w4a.onrender.com/api/auth/user-weight', {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((response) => {
@@ -78,7 +78,7 @@ const Home = () => {
       }
 
       const response = await axios.delete(
-        `http://localhost:5000/api/workouts/${workoutId}`,
+        `https://backend-workout-4w4a.onrender.com/api/workouts/${workoutId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -116,7 +116,7 @@ const Home = () => {
                <div key={workout._id} className="col-md-4 d-flex justify-content-center">
                <div className="card m-2 p-2 workout-card position-relative" style={{ borderRadius: "10px", width: "18rem", padding: "10px", position: "relative" }}>
                  
-                 {/* Delete Icon */}
+              
                  <i 
                    className="bi bi-trash-fill text-danger position-absolute top-0 end-0 m-2"
                    style={{ cursor: "pointer", fontSize: "1.5rem" }}

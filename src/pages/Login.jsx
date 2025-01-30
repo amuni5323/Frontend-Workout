@@ -20,16 +20,16 @@ const Login = () => {
     console.log("Sending data:", userData);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", userData);
+      const response = await axios.post("https://backend-workout-4w4a.onrender.com/api/auth/login", userData);
       const { email, token } = response.data;
       setUser({ email, token });
 
-      // Save token and email in localStorage
+      
       localStorage.setItem("email", email);
       localStorage.setItem("token", token);
 
       enqueueSnackbar("Login successful", { variant: "success" });
-      navigate("/createpage"); // Ensure this route exists and is spelled correctly
+      navigate("/createpage"); 
     } catch (error) {
       const message = error.response?.data?.message || "An error occurred";
       enqueueSnackbar(message, { variant: "error" });
