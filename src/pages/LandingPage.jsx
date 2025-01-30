@@ -8,7 +8,8 @@ const LandingPage = () => {
     <div className="row g-0 vh-100">
    
       <div className="col-lg-8 col-md-6 col-sm-12 bg-primary text-white d-flex justify-content-center align-items-center">
-        <img src="./public/AuthImage.jpg" alt="Gym-Log" className="img-fluid" />
+      <img src="/AuthImage.jpg" alt="Gym-Log" className="img-fluid" />
+
       </div>
   
      
