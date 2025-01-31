@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 const LandingPage = () => {
   return (
@@ -18,8 +18,8 @@ const LandingPage = () => {
           <h1 className="mb-4 text-primary">Welcome to Gym-Log</h1>
           <p className="lead">Your personal fitness tracking app</p>
           <div>
-            <a href="/signup" className="btn btn-primary m-2 px-5 ">Sign Up</a>
-            <a href="/login" className="btn btn-secondary m-2 px-5">Log In</a>
+            <Link href="/signup" className="btn btn-primary m-2 px-5 ">Sign Up</Link>
+            <Link href="/login" className="btn btn-secondary m-2 px-5">Log In</Link>
           </div>
         </div>
       </div>
