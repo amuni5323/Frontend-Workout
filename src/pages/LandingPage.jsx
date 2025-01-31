@@ -18,8 +18,8 @@ const LandingPage = () => {
           <h1 className="mb-4 text-primary">Welcome to Gym-Log</h1>
           <p className="lead">Your personal fitness tracking app</p>
           <div>
-            <Link href="/signup" className="btn btn-primary m-2 px-5 ">Sign Up</Link>
-            <Link href="/login" className="btn btn-secondary m-2 px-5">Log In</Link>
+            <Link to="/signup" className="btn btn-primary m-2 px-5 ">Sign Up</Link>
+            <Link to="/login" className="btn btn-secondary m-2 px-5">Log In</Link>
           </div>
         </div>
       </div>
